@@ -50,3 +50,43 @@ const acpt = 3000;
 console.log(acpt);
 // const acpt = 2000;
 // acpt = 2000;
+
+// Arithmetoc Operators 
+// Addition (+)
+const a = 10;
+const b = 20;
+const addition = a + b;
+console.log(addition);
+
+// Subtraction (-)
+const c = 30;
+const d = 10;
+const sub = c - d
+console.log(sub);
+
+// Multiplication (*)
+const e = 10;
+const f = 5;
+const multi = e * f
+console.log(multi);
+
+// Division (/)
+const division = e / f
+console.log(division);
+
+// Modulus (%)
+const modulus = a%b 
+console.log(modulus);
+
+// Increment (++)
+let h = 10;
+h++
+h++
+console.log(h);
+
+// Decrement (--)
+let k = 10;
+k--
+k--
+console.log(k);
+
