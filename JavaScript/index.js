@@ -90,3 +90,139 @@ k--
 k--
 console.log(k);
 
+// Comparison Operators
+const l = 13;
+const m = 13;
+// Equal (==)
+console.log(l === m);
+
+// Not Equal (!=)
+console.log(l !== m);
+
+// Greater Than (>)
+console.log(l > m);
+
+// Less thann (<)
+console.log(l < m);
+
+// Greater than or Equal(>=)
+console.log(l >= m);
+
+// Less than or Equal (<=)
+console.log(l <= m);
+
+
+// Logical Operators
+const n = true;
+const o = true
+// AND (&&)
+console.log(n && o);
+
+// OR (||)
+console.log(n || o);
+
+// NOT (!)
+console.log(!n);
+
+
+// Function 
+function myName () {
+    console.log("Chamikara");
+}
+
+const printStudentName = (name) => {
+    console.log("My Name is "+name);
+}
+{
+    console.log("ACPT");
+}
+
+myName();
+printStudentName("Chamikara");
+printStudentName("Yasindu")
+printStudentName("Binara")
+printStudentName('Kalana')
+
+
+// Return Function 
+// function numberEqual (num1, num2) {
+//     const num = num1+num2;
+//     return num;
+// }
+const numberEqual = (num1, num2)=> {
+    const num = num1+num2;
+    return num;
+}
+
+const chami = numberEqual(10, 55);
+console.log(chami);
+
+// Flow Controllers
+// If 
+const stu = 1800;
+const stu1 = 800;
+
+if(stu > stu1){
+    if(stu > 100){
+        console.log("100+++");
+    }else{
+
+    }
+}else if(stu == stu1){
+    console.log("Equal Number");
+}else {
+    console.log('False');
+}
+
+// switch
+const val = '';
+switch(val){
+    case "ACPT":
+        console.log('Print ACPT');
+        break;
+        case "AFSD":
+            console.log('Print AFSD');
+            break;
+            default: 
+            console.log('Non')
+        break;
+}
+
+const studentMarks = (mark) => {
+    let result = ''
+    if(mark >= 75){
+        result = "A"
+    }else if(mark >= 65){
+        result = "B"
+    }else if(mark >= 55){
+        result = "C"
+    }else if(mark >= 35){
+        result = "S"
+    }else{
+        result = "W"
+    }
+    return result;
+}
+
+const re = studentMarks(12);
+console.log(re);
+
+// For Loops 
+const arr = [25, 45, 87, 23, 9, 57, 12, 32, 76, 99];
+for(let i=0; i< arr.length; i++){
+    console.log("Student "+(i+1)+" Grade Of :"+studentMarks(arr[i]));
+}
+
+// While 
+let w = 0;
+while(w<10){
+    console.log("print true");
+    w++
+}
+
+// do while 
+let chil = 0;
+do {
+    console.log('true')
+    chil++
+}while(chil < 10)
