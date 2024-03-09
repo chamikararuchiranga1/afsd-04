@@ -1,9 +1,9 @@
 console.log('ACPT')
 
-document.write('<h1>Java Script</h1>')
-document.write('Chamikara Ruchiranga')
-document.write('<h3>ACPT</h3>')
-document.write("<button>Click me</button>")
+// document.write('<h1>Java Script</h1>')
+// document.write('Chamikara Ruchiranga')
+// document.write('<h3>ACPT</h3>')
+// document.write("<button>Click me</button>")
 
 // alert('Chamikara')
 
@@ -226,3 +226,82 @@ do {
     console.log('true')
     chil++
 }while(chil < 10)
+
+// Break 
+for(let i=0; i< arr.length; i++){
+    console.log("Student "+(i+1)+" Grade Of :"+studentMarks(arr[i]));
+    if(i === 4){
+        break;
+    }
+}
+
+// Object 
+const car = {
+    brand: 'BMW',
+    color: 'blue',
+    price: '12000000',
+    drive: function(){console.log('drive')},
+    break: ()=> {console.log('break'); return 'Drive'}
+}
+
+const brand = car.brand;
+console.log(brand);
+
+car.drive();
+car.break();
+
+// Array 
+const samArray = ['Chamikara', 89, true, car];
+
+console.log(samArray[3].break());
+console.log("======================================================");
+
+function callBack () {
+    // console.log("run function");
+    // return "Call Back ===== 2"
+}
+
+// const textCall = callBack();
+console.log(callBack());
+
+
+const person = ['Chamikara', 'Binara', 'dananjaya', 'Lasindu'];
+
+// const p = person.pop();
+// console.log(person);
+// console.log(p);
+
+// person.push('Yasindu');
+// console.log(person);
+
+// const p = person.shift();
+// console.log(person);
+// console.log(p);
+
+// person.unshift('Yasindu');
+// console.log(person);
+
+// Event 
+// onClick 
+function clickMe () {
+    console.log("Click Button");
+    // document.write('<br><h1>Chamikara</h1>')
+}
+
+// onChange 
+function onChangeText () {
+    const text = document.getElementById('change-text').value;
+    document.getElementById('onChange-view').innerText = text
+}
+
+// Mouse Over 
+function mouseOver () {
+    document.getElementById('mouse-view').style.backgroundColor = 'red'
+    document.getElementById('mouse-view').style.width = '300px'
+}
+
+// Mouse Out 
+function mouseOut () {
+    document.getElementById('mouse-view').style.backgroundColor = 'blue'
+    document.getElementById('mouse-view').style.width = '200px'
+}
