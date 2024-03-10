@@ -305,3 +305,19 @@ function mouseOut () {
     document.getElementById('mouse-view').style.backgroundColor = 'blue'
     document.getElementById('mouse-view').style.width = '200px'
 }
+
+function keyDown () {
+    console.log('Key Down....');
+    // const text = document.getElementById('keyId').value;
+    // document.getElementById('onKey-view').innerText = text
+}
+
+function keyUp () {
+    console.log('Key Up....');
+}
+
+function keyPress () {
+    console.log('Key Press ....');
+}
+
+
