@@ -34,4 +34,87 @@ function addition () {
         sum += parseInt(number[i]);
     }
     document.getElementById('display-4').innerText = sum
+}
+
+function enterMarks () {
+    const mark = document.getElementById("input-8").value;
+    let result = ""
+    if(mark >= 75){
+        result = "A";
+    }else if(mark >= 65){
+        result = "B";
+    }else if(mark >= 45){
+        result = "C";
+    }else if(mark >= 35){
+        result = "S";
+    }else{
+        result = "Fail";
+    }
+    document.getElementById('display-5').innerText = result
  }
+
+ function keySubmit () {
+    let fullName = "";
+    const userInput = document.getElementById("input-9").value
+
+switch (userInput) {
+    case 'intern': 
+    fullName = "Intern Software Engineer";
+    break;
+  case "se":
+    fullName = "Software Engineer";
+    break;
+  case "ase":
+    fullName = "Associate Software Engineer";
+    break;
+  case "sse":
+    fullName = "Senior Software Engineer";
+    break;
+  case "atl":
+    fullName = "Assistant Tech Lead";
+    break;
+  case "tl":
+    fullName = "Tech Lead";
+    break;
+  default:
+    fullName = "error key word..!";
+    break;
+}
+
+    document.getElementById('display-6').innerText = fullName
+}
+
+
+function login() {
+    const uName = 'adMIn';
+    const uPass = '12345';
+    const userName = document.getElementById("test-10").value
+    const password = document.getElementById("test-11").value
+    let mms = ""
+    if(uName.toLowerCase() == userName.toLowerCase() && uPass.toLowerCase() == password.toLowerCase()){
+        mms = 'Login Success..!'
+    }else{
+        mms = 'Login Fail..!'
+    }
+    document.getElementById('display-7').innerText = mms;
+}
+
+function enterLogin (event) {
+    if(event.keyCode === 13){
+        login()
+    }
+}
+
+const numArray = []
+function arrayPush(event) {
+    if(event.keyCode === 13){
+        const userInput = document.getElementById("test-12").value
+        numArray.push(userInput);
+        document.getElementById("test-12").value = "";
+    }
+}
+
+function arrayPrint() {
+    document.getElementById('display-8').innerText = numArray;
+}
+
